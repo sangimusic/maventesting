@@ -18,8 +18,8 @@ steps:
 - task: Maven@4
   displayName: 'Build & Run Tests'
   inputs:
-    mavenPomFile: 'maventesting/pom.xml'
+    mavenPomFile: 'pom.xml'
     goals: 'clean test'
     options: '-DskipIntegrationTests=false'
     publishJUnitResults: true
-    testResultsFiles: 'MavenApp/target/surefire-reports/TEST-*.xml'
+    testResultsFiles: 'maventesting/target/surefire-reports/TEST-*.xml'
